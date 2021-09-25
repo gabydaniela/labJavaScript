@@ -1,11 +1,11 @@
-let contenido_textarea = ""
+let contenido = ""
         
 function verificar(control, max, progressText){
     num_caracteres = progressText.value.length
     if (num_caracteres > max) {
-        progressText.value = contenido_textarea
+        progressText.value = contenido
     }else{
-        contenido_textarea = progressText.value
+        contenido = progressText.value
     }
     
     if (num_caracteres >= max){
@@ -13,9 +13,5 @@ function verificar(control, max, progressText){
     }else{
         document.forms[0].caracteres.style.color="#000000";
     }
-    cuenta(progressText)
-}
-        
-function cuenta(progressText){
-    document.forms[0].caracteres.value=progressText.value.length
+    document.forms[0].caracteres.value = progressText.value.length
 }
