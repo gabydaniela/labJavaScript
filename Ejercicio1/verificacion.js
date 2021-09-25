@@ -1,3 +1,7 @@
+/* Código desarrollado por Daniela Quesada Aguilar carnet: B25247 
+   CI 0137 Desarrollo de Aplicaciones Web   II2021
+   Universidad de Costa Rica */
+
 let contenido = ""
         
 function verificar(control, max, progressText){
